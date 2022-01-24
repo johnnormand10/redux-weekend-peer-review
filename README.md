@@ -16,59 +16,59 @@ Practicing compassionate code reviews is important (you can learn more from this
 ## Base Required Features 
 
 - Multi-Part Form:  
-  - [ ] Able to add feedback
-    - [ ] Data collected on individual pages & components
-    - [ ] Click on next takes you to the next page in sequence
-    - [ ] Data saves in DB after *all* the parts are completed (not piecemeal)
-    - [ ] Thank you page takes you back to the first view
-    - [ ] Old Data is cleared on form completion
+  - [] Able to add feedback
+    - [] Data collected on individual pages & components
+    - [] Click on next takes you to the next page in sequence
+    - [] Data saves in DB after *all* the parts are completed (not piecemeal)
+    - [] Thank you page takes you back to the first view
+    - [] Old Data is cleared on form completion
 
 - Client code:
-  - [ ]  Individual components for each form part
-  - [ ]  Redux setup complete
-    - [ ] Store linked to react with `<Provider>`
-    - [ ] Store setup with reducer(s) and logger middleware 
-  - [ ] Reducers & Actions Working
-    - [ ] Actions are in SCREAMING_SNAKE_CASE and semantically named
-    - [ ] Actions have a `type` key, and `payload` if sending data
-    - [ ] Reducers are returning a new state, or the old state (not mutating)
-    - [ ] Reducers are using spread correctly (to keep old data, while adding new)
-  - [ ] Review Component shows at all times with current redux state
-  - [ ] React-Redux Working
-    - [ ] Dispatching actions onClick
-    - [ ] Grabbing data from the redux store with `useSelector`
-  - [ ] Axios POST request to add feedback
+  - []  Individual components for each form part
+  - []  Redux setup complete
+    - [] Store linked to react with `<Provider>`
+    - [] Store setup with reducer(s) and logger middleware 
+  - [] Reducers & Actions Working
+    - [] Actions are in SCREAMING_SNAKE_CASE and semantically named
+    - [] Actions have a `type` key, and `payload` if sending data
+    - [] Reducers are returning a new state, or the old state (not mutating)
+    - [] Reducers are using spread correctly (to keep old data, while adding new)
+  - [] Review Component shows at all times with current redux state
+  - [] React-Redux Working
+    - [] Dispatching actions onClick
+    - [] Grabbing data from the redux store with `useSelector`
+  - [] Axios POST request to add feedback
 
 
 - Server code:   
-  - [ ] Router made for GET, POST
+  - [Yes] Router made for GET, POST
 
 
 ## General Items
 Feedback should be provided for these items, but they do not impact scoring.
 
 - Git 
-  - [ ] Multiple git commits showing incremental progress
-  - [ ] Commits are descriptive of the changes made or feature added 
-  - [ ] Has .gitignore with node_modules
-  - [ ] Readme file updated (assuming this is previously discussed)
+  - [Yes] Multiple git commits showing incremental progress
+  - [Yes] Commits are descriptive of the changes made or feature added 
+  - [Yes] Has .gitignore with node_modules
+  - [Yes] Readme file updated (assuming this is previously discussed)
 - Code Style 
-  - [ ] Appropriate amount of code comments
-  - [ ] Code is consistently formatted
+  - [Yes] Appropriate amount of code comments
+  - [Yes] Code is consistently formatted
 - Client
-  - [ ] Appropriate use of HTML tags
-  - [ ] Basic CSS styling with margins/padding
+  - [Yes] Appropriate use of HTML tags
+  - [Yes] Basic CSS styling with margins/padding
 
 
 ## Stretch Goals
 First must be complete for score of  _Exceeds Expectations_
 
 - Previous Steps
-  - [ ] allows a user to go to a previous step, either directly or by cycling backward thru the steps
-  - [ ] user can upate their score for a step
-    - [ ] new score is validated to not be empty
-    - [ ] redux is updated with new score
-  - [ ] user can continue on to review page and submit as in Base Mode
+  - [Yes] allows a user to go to a previous step, either directly or by cycling backward thru the steps
+  - [Yes] user can upate their score for a step
+    - [Yes] new score is validated to not be empty
+    - [Yes] redux is updated with new score
+  - [Yes] user can continue on to review page and submit as in Base Mode
 
 
 - Admin View
@@ -80,7 +80,7 @@ First must be complete for score of  _Exceeds Expectations_
 
   Busywork Goals, consider removing or making more useful
 
-- [ ] Styling with Material UI
+- [Yes] Styling with Material UI
 - [ ] Ability to flag a feedback item on `/admin` for further review
 - [ ] Deployed to Heroku
 
@@ -88,21 +88,21 @@ First must be complete for score of  _Exceeds Expectations_
 ## Markdown
 
 ```
-Hey ___,
+Hey Andre,
 
 General Feedback.
 
 ---
 | Functional Requirements | Complete? |
 | --- | :---: |
-| Multi page form with client side routing and navigation (next button) | no |
-| Data stored in Redux when navigating from page to page | no |
-| User is notified when trying to leave a blank score | no |
-| Review Component displays scores and comments from current redux state | no |
-| Submit button sends data to the server via Axios | no |
-| Confirmaion Page displays after data is POSTed to the server | no |
-| Button on Confirmation Page clears Redux and starts a new survey | no |
-| Views are broken down into components | no |
+| Multi page form with client side routing and navigation (next button) | Yes |
+| Data stored in Redux when navigating from page to page | Yes |
+| User is notified when trying to leave a blank score | Yes |
+| Review Component displays scores and comments from current redux state | Yes |
+| Submit button sends data to the server via Axios | Yes |
+| Confirmaion Page displays after data is POSTed to the server | Yes |
+| Button on Confirmation Page clears Redux and starts a new survey | Yes |
+| Views are broken down into components | Yes |
 
 ---
 ### Notes:
@@ -112,16 +112,19 @@ Notes on the above Functional Requirements.
 ---
 | General Items | Complete? |
 | --- | :---: |
-| More than 15 git commits | no |
-| Commits are descriptive of the changes made or feature added | no |
-| Readme file updated | no |
-| Appropriate amount of code comments | no |
-| Code is consistently formatted | no |
-| Server code organized with router & module files | no |
+| More than 15 git commits | Yes - 41 |
+| Commits are descriptive of the changes made or feature added | Yes |
+| Readme file updated | Yes |
+| Appropriate amount of code comments | Yes |
+| Code is consistently formatted | Yes |
+| Server code organized with router & module files | Yes |
 
 ---
 ### Notes:
 
 Notes on General Items
+
+- Don't be afraid to add more comments around.
+- Great work, keep it up!
 
 ```
