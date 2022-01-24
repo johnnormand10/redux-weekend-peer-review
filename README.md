@@ -125,6 +125,7 @@ Notes on the above Functional Requirements.
 Notes on General Items
 
 - Don't be afraid to add more comments around.
+- Make sure you set a value to your useState(). Ex. useState(0) .... useState(null) .... useState('')
 - Great work, keep it up!
 
 ```
